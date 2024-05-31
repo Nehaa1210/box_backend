@@ -9,7 +9,7 @@ const app = express();
 app.use(cors());
 
 
-app.get('/', async (req, res) => {
+app.get('/api/sample-data', async (req, res) => {
   try {
     
     const response = await axios.get(process.env.API_URL);
